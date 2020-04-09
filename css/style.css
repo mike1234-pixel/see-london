@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap");
+/* import all font weights */
+
+/*
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+*/
+
+/* the universal selector * selects each and every element on a page and applies the declarations*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* by default browsers apply a certain margin and padding by default - first step is to remove them, removing the padding/margin enables us to start clean */
+/* changes the box model so the borders and paddings are no longer added to the total height or width that we specify for a box */
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7; /* 1.7 times bigger than the default line height */
+  color: #777;
+  padding: 30px;
+}
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, #7ed56fad, #28b4858f),
+    url("../img/hero.jpg");
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  position: relative;
+}
+
+/* to right, makes the linear gradient go from left top to right bottom corner */
+/* hover over the colours to use the colour picker - there you can choose an opacity for your overlay colours*/
+/* here we're giving our background img a coloured overlay - here we have two background images, one on top of the other */
+/* fits the background img inside the width of the viewport */
+/* ensures that the top of the image always stays at the top of the viewport */
+
+/* CLIP- PATH */
+/* with clip-path we can clip an image by defining the coordinates of a polygon that we want to be visible*/
+/* start in the top left corner and move clockwise */
+/* clip-path: polygon(x y, x y, x y, x y); these coordinates are all relative to the top right hander corner of the element. x is across, y is down.*/
+/* https://bennettfeely.com/clippy/ : this tool autogenerates the coordinates for you based on the shape you want*/
+
+.logo-box {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+/* we set the parent element (header) to position: realtive, and now top and left are relative to the top and left of the parent container with a position of relative */
+
+.logo {
+  height: 35px;
+}
+
+.text-box {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* TRANSFORM */
+/* using position: absolute, top: 50% and left: 50% pushes whatever's inside the box 50% from the top and left of the parent*/
+/* however in order to center the child relative to the parent we need the CENTER of the element pushed 50% from the top and left of its parent, NOT the outer edges*/
+/* transform: translate(x, y) allows us to do this */
+/* specify translate -50% on x and y, this changes the point from where the child is pushed to be the center of the child rather than its outer edges  */
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.heading-primary-main {
+  display: block;
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 35px;
+  animation: moveInLeft 1s ease-in;
+  /* animation-name: moveInLeft */
+  /* animation-duration: 1s; */
+  /* animation-timing-function: ease-in; -- these properties can be written in the above shorthand */
+  /* animation-delay: 3s; */
+  /* animation-iteration-count: 3 */
+}
+
+.heading-primary-sub {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 17.4px;
+  animation: moveInRight 1s ease-in;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+/* 0% initial state, 100% final state*/
+/* change opacity from 0 to 1 (fadeIn) */
+/* move the element in the x direction (left to right)*/
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.5s;
+  position: relative;
+  animation: moveInLeft 1s ease-in;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* PSEUDOCLASSES */
+/* we use pseudoclasses to style an element under a certain condition*/
+/* link pseudoclass applies to links */
+/* visited is the state where the user has already clicked on the link before and sees it again*/
+/* here we're keeping the styles for link and visited states the same*/
+/* when we click an element, this is called the 'active' state, here the -1px is relative to the link state, not to the hover  */
+/* transition property enables us to specify simple animations */
+
+.btn-white {
+  background-color: #fff;
+  color: #777;
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn-white::after {
+  background-color: #fff;
+}
+
+.btn:hover::after {
+  transform: scaleX(2) scaleY(1.5);
+  opacity: 0;
+}
+
+/* PSEUDO-ELEMENTS - ::before and ::after*/
+
+/* pseudo-elements can be inserted (spatially) ::before or ::after a particular element */
+/* a pseudo-element is basically an element you can have, without having to include it in your markup */
+/* in this case we created a pseudo-element as it's there purely for animation effect (to increase in size and fadeout on hover, creating a splash effect)*/
+/* to use: */
+/* have to specify content and display properties first, even if they're empty*/
+/* after is treated like a child of the .btn element, so 100% h and w is the height and width of the button */
