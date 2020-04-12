@@ -1,0 +1,23 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Nature tours, Advanced CSS and Sass Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mike1234-pixel/Natours-Project.git"
+  },
+  "author": "Michael Tandy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mike1234-pixel/Natours-Project/issues"
+  },
+  "homepage": "https://github.com/mike1234-pixel/Natours-Project#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
