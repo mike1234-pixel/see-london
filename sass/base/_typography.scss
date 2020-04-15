@@ -54,3 +54,16 @@ body {
 // then change display to inline-block so the background only occupies the width of the text and not the whole viewport
 // the background gets clipped exactly where the text is
 // finally change text color to transparent
+
+.heading-tertiary {
+  font-size: $default-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: $default-font-size;
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}

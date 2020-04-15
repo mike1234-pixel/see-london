@@ -1,0 +1,46 @@
+.composition {
+  position: relative;
+  &__photo {
+    width: 55%;
+    display: block;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 10;
+    transition: all 0.2s;
+    &--p1 {
+      left: 0;
+      top: -2rem;
+    }
+    &--p2 {
+      right: 0;
+      top: 2rem;
+    }
+    &--p3 {
+      left: 20%;
+      top: 10rem;
+    }
+    &:hover {
+      outline: 1.5rem solid $color-primary;
+      outline-offset: 2rem;
+      transform: scale(1.2) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
+      z-index: 20;
+    }
+  }
+  &:hover &__photo:not(:hover) {
+    transform: scale(0.8);
+  }
+}
+// width is 55% of the parent. the parent of .composition__photo is the div with class "composition"
+
+// TO STACK IMAGES ONE ON TOP OF ANOTHER
+// Use absolute positioning - set the img elements to position: absolute,
+// Then set the parent (.composition div) to position: relative
+// Set the positions of the images one by one
+
+// need to make the z-index of the hovered image bigger than the other images so that when the user hovers of an image that image is in front
+// to create a border where there's space between the image and the border, need to use outline and outline-offset properties
+
+// Finally, when the user hovers on the composition div, select the composition__photo's that are NOT hovered, and decrease their size.
+// This is to make the images that are not being hovered over smaller.
