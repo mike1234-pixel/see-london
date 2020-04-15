@@ -1,0 +1,63 @@
+.row {
+  max-width: $grid-width;
+  background-color: #eee;
+  margin: 0 auto;
+
+  &:not(:last-child) {
+    margin-bottom: $gutter-vertical;
+  }
+
+  // apply the following style if element is not the last child of row.
+
+  @include clearfix;
+
+  // we can use the attribute selector to act like a regexp selector for class names, here we're going to select classes than begin with "col-"
+  // ^= starts with
+  // *= contains
+  // $= ends with
+  [class^="col-"] {
+    background-color: orangered;
+    float: left;
+
+    &:not(:last-child) {
+      margin-right: $gutter-horizontal;
+    }
+  }
+
+  .col-1-of-2 {
+    width: calc((100% - #{$gutter-horizontal}) / 2);
+  }
+
+  .col-1-of-3 {
+    width: calc((100% - (#{$gutter-horizontal} * 2)) / 3);
+  }
+
+  .col-2-of-3 {
+    width: calc(
+      ((100% - (#{$gutter-horizontal} * 2)) / 3) * 2 + #{$gutter-horizontal}
+    );
+  }
+
+  .col-1-of-4 {
+    width: calc((100% - (#{$gutter-horizontal} * 3)) / 4);
+  }
+
+  .col-2-of-4 {
+    width: calc(
+      ((100% - (#{$gutter-horizontal} * 3)) / 4) * 2 + #{$gutter-horizontal}
+    );
+  }
+
+  .col-3-of-4 {
+    width: calc(
+      ((100% - (#{$gutter-horizontal} * 3)) / 4) * 3 + #{$gutter-horizontal * 2}
+    );
+  }
+}
+
+// calc() allows you to do mathematical operations in css, and mix units.
+// need to use #{} to use a sass variable
+// apply a right margin to each of the columns except the last one
+
+// max-width means that if the viewport is smaller than the width that we specify,
+// then the element will fill 100% of the available space.
