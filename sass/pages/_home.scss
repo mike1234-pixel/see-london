@@ -3,3 +3,26 @@
   padding: 25rem 0;
   margin-top: -20vh;
 }
+
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url("../img/nat-4.jpg");
+  background-size: cover;
+  transform: skewY(-7deg);
+  margin-top: -10rem;
+
+  & > * {
+    transform: skewY(7deg);
+  }
+}
+
+// SKEWING AN ELEMENT AND UNSKEWING THE FIRST DIRECT CHILD
+// & > *  using this we are selecting the first direct child of .section-features
+// in this case the first direct child is the div with the class of "row"
+// because we have skewed section-features, "row" is also skewed
+// to unskew the "row" div (and its contents), we need to skew them in the opposite direction
