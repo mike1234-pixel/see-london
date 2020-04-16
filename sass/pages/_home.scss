@@ -21,8 +21,8 @@
   }
 }
 
-// SKEWING AN ELEMENT AND UNSKEWING THE FIRST DIRECT CHILD
-// & > *  using this we are selecting the first direct child of .section-features
-// in this case the first direct child is the div with the class of "row"
-// because we have skewed section-features, "row" is also skewed
-// to unskew the "row" div (and its contents), we need to skew them in the opposite direction
+.section-tours {
+  background-color: $color-grey-light-1;
+  padding: 25rem 0 50rem 0;
+  margin-top: -10rem;
+}

@@ -1,0 +1,50 @@
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+
+  &__side {
+    height: 50rem;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+    &--front {
+      &-1 {
+        background-color: yellow;
+      }
+    }
+
+    &--back {
+      transform: rotateY(180deg);
+
+      &-1 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-secondary-light,
+          $color-secondary-dark
+        );
+      }
+    }
+  }
+  &:hover &__side--front {
+    transform: rotateY(180deg);
+  }
+  &:hover &__side--back {
+    transform: rotateY(0deg);
+  }
+}
+
+// ROTATING CARDS
+// cards to rotate 180deg across the y axis on hover
+// use transform property to rotate 180 deg on hover, then transition as above to make the animation smooth
+// we define perspective on the parent so that the card looks like it's coming out of the screen when rotating
+// to do this we need to add children to the card elements, called "card__side"
+// (lower numbers on perspective property create more dramatic/exaggerated effect)
+// we want the back side to start at 180deg rotation, and move towards 0deg on hover - so we set the starting value of the back side to 180deg rotatation
+// and then rotate the front and back sides accordingly so they are rotating on opposite ways
