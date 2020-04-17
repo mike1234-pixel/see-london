@@ -1,0 +1,38 @@
+.story {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba($color-black, 0.1);
+  background-color: $color-white;
+  border-radius: 3px;
+  padding: 6rem;
+  padding-left: 9rem;
+  font-size: $default-font-size;
+  transform: skewX(-12deg);
+
+  &__shape {
+    width: 15rem;
+    height: 15rem;
+    background-color: orange;
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-3rem) skewX(12deg);
+  }
+
+  &__img {
+    height: 100%;
+  }
+
+  &__text {
+    transform: skewX(12deg);
+  }
+}
+
+// SHAPE OUTSIDE
+// defines a vector shape around which adjacent inline content (e.g. text) should wrap
+// radius is 50% of the width at the center of the shape (50% horizontally and 50% vertically)
+// property only works if element is floated and has defined width and height
+// finally, actually create the circle using clip-path.
+// use transform to add the left margin to the text rather than margin-left, as this is around a floated element.
