@@ -29,6 +29,14 @@
     box-shadow: 0 5px 10px rgba($color-black, 0.2);
   }
 
+  &--primary {
+    background-color: $color-primary;
+    color: $color-grey-light-1;
+    &::after {
+      background-color: $color-primary;
+    }
+  }
+
   &--white {
     background-color: $color-white;
     color: $color-grey-dark;

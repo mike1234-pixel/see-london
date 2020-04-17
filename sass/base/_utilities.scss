@@ -1,10 +1,12 @@
 // UTILITY CLASSES
 // These are reusable classes that have one specific function
 
+// CENTER TEXT
 .u-center-text {
   text-align: center;
 }
 
+// BOTTOM MARGINS
 .u-margin-bottom-big {
   margin-bottom: 8rem;
 }
@@ -15,4 +17,17 @@
 
 .u-margin-bottom-small {
   margin-bottom: 1.5rem;
+}
+
+// TOP MARGINS
+.u-margin-top-big {
+  margin-top: 8rem;
+}
+
+.u-margin-top-small {
+  margin-top: 4rem;
+}
+
+.u-margin-top-small {
+  margin-top: 1.5rem;
 }
