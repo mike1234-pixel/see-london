@@ -85,7 +85,7 @@ body {
 .u-margin-bottom-big {
   margin-bottom: 8rem; }
 
-.u-margin-bottom-small {
+.u-margin-bottom-medium {
   margin-bottom: 4rem; }
 
 .u-margin-bottom-small {
@@ -94,7 +94,7 @@ body {
 .u-margin-top-big {
   margin-top: 8rem; }
 
-.u-margin-top-small {
+.u-margin-top-medium {
   margin-top: 4rem; }
 
 .u-margin-top-small {
@@ -431,5 +431,19 @@ body {
 .section-stories {
   padding: 15rem 0;
   position: relative; }
+
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+
+.book {
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
+  background-size: cover;
+  border-radius: 3px;
+  box-shadow: 0 1.5 4rem rgba(0, 0, 0, 0.15);
+  height: 50rem; }
+  .book__form {
+    width: 50%;
+    padding: 6rem; }
 
 /* import all font weights */
