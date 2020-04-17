@@ -14,6 +14,7 @@
     border-bottom: 3px solid transparent;
     width: 90%;
     display: block;
+    transition: 0.3s;
 
     &:focus {
       outline: none;
@@ -47,11 +48,54 @@
     visibility: hidden;
     transform: translateY(-4rem);
   }
-  // when the placeholder is shown (meaning the user has written no input)...
-  // we want the label to be hidden
-  // using the adjacent sibling selector we can select both input and label
-}
+  &__radio-group {
+    width: 49%;
+    display: inline-block;
+  }
 
-// we can use the invalid pseudoclass to apply specific values when an input is valid or not valid
-// going to use orange as colour for invalid input
-// green for valid input
+  &__radio-input {
+    display: none;
+  }
+
+  &__radio-label {
+    font-size: $default-font-size;
+    cursor: pointer;
+    position: relative;
+    padding-left: 4.5rem;
+  }
+
+  &__radio-button {
+    height: 3rem;
+    width: 3rem;
+    border: 5px solid $color-primary;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: -0.4rem;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 1.3rem;
+      width: 1.3rem;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: $color-primary;
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+  }
+
+  &__radio-input:checked ~ &__radio-label &__radio-button::after {
+    opacity: 1;
+  }
+  //STYLING RADIO BUTTONS (& CHECK BOXES)
+  // when user checks a radio button, the radio-input becomes checked, so we have the :checked pseudoclass available to us
+  // we select the sibling of the radio button, and then the child, because that's the one we want to change each time that the radio input is selected (changing its opacity from 0 to 1)
+  // the same method works for styling check boxes
+  // finally, hide the original radio buttons (&__radio-input)
+}

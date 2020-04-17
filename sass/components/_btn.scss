@@ -2,6 +2,7 @@
 // we can use across the project
 
 .btn {
+  &,
   &:link,
   &:visited {
     text-transform: uppercase;
@@ -13,9 +14,14 @@
     position: relative;
     animation: moveInLeft 1s ease-in;
     font-size: $default-font-size;
+
+    border: none;
+    cursor: pointer;
   }
 
-  &:hover {
+  &:hover,
+  &:active {
+    outline: none;
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba($color-black, 0.2);
     &::after {
