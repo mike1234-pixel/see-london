@@ -19,16 +19,49 @@
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12deg);
+    position: relative;
   }
 
   &__img {
     height: 100%;
+    transform: translateX(-4rem) scale(1.4);
+    backface-visibility: hidden;
+    transition: all 0.5s;
   }
 
   &__text {
     transform: skewX(12deg);
   }
+
+  &__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: $color-white;
+    text-transform: 1.7rem;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.5s;
+    backface-visibility: hidden;
+  }
+
+  &:hover &__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover &__img {
+    transform: translateX(-4rem) scale(1);
+    filter: blur(3px) brightness(80%);
+  }
 }
+// IMG HOVER STYLING
+
+// styling on figcaption positions the text on top of the image, centered horizontally and vertically
+// figcaption appears on hover
+// for the image itself, apply starting scale of 1.4 and return to scale 1 on hover. this zooms the picture in and out.
+// then we use filter property to blue the image and make the img darker on hover.
 
 // SHAPE OUTSIDE
 // defines a vector shape around which adjacent inline content (e.g. text) should wrap
