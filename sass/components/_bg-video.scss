@@ -1,0 +1,33 @@
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.15;
+  overflow: hidden;
+
+  &__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+// BACKGROUND VIDEO
+
+// in the HTML:
+
+// create a video element with a parent div,
+// along with a source element inside it
+// source should contain mp4 and webm formats, and a message if the browser doesn't support it
+
+// in the CSS:
+
+// set video to position absolute
+// set parent element to position relative
+// make height and width of the parent 100%
+// decrease the z-index so it's behind/in the background of everything else in the section
+// give the video itself the height and width of the parent
+// finally, object-fit: cover allows the background video to be fully responsive (video remains same width as viewport whilst retaining height to contain all child elements)
