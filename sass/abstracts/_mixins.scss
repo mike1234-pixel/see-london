@@ -12,3 +12,53 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+// MEDIA QUERY MANAGER
+/* 
+BREAK POINTS
+0 - 600 px: - phone
+600 - 900px: - portrait tablet
+900 - 1200px: - landscape tablet /// max-width media queries for these three ranges ///
+
+[1200 - 1800px]: is where our normal styles apply 
+
+1800ps + : Big Desktop /// min-width media queries for this range ///
+*/
+
+// the @content directive allows us to pass a block of code into a mixin
+/* 
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+1em == 16px
+Using ems in media queries rather than pixels allows the user to define their own font-size, which we want them to be able to do
+*/
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em) {
+      // 600px
+      @content;
+    }
+  }
+  @if $breakpoint == tab-port {
+    @media (max-width: 56.25em) {
+      // 900px
+      @content;
+    }
+  }
+  @if $breakpoint == tab-land {
+    @media (max-width: 75em) {
+      // 1200px
+      @content;
+    }
+  }
+  @if $breakpoint == big-desktop {
+    @media (min-width: 112.5em) {
+      // 1800px
+      @content;
+    }
+  }
+}

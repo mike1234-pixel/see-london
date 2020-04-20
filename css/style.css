@@ -1,3 +1,23 @@
+/* 
+BREAK POINTS
+0 - 600 px: - phone
+600 - 900px: - portrait tablet
+900 - 1200px: - landscape tablet /// max-width media queries for these three ranges ///
+
+[1200 - 1800px]: is where our normal styles apply 
+
+1800ps + : Big Desktop /// min-width media queries for this range ///
+*/
+/* 
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+1em == 16px
+Using ems in media queries rather than pixels allows the user to define their own font-size, which we want them to be able to do
+*/
 @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap");
 *,
 *::after,
@@ -8,6 +28,15 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 @keyframes moveInLeft {
   0% {
