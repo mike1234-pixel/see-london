@@ -1,9 +1,17 @@
 .row {
   max-width: $grid-width;
   margin: 0 auto;
+  @include respond(tab-port) {
+    max-width: 50rem;
+    padding: 0 3rem;
+  }
 
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
+
+    @include respond(tab-port) {
+      margin-botton: $gutter-vertical-small;
+    }
   }
 
   // apply the following style if element is not the last child of row.
@@ -19,6 +27,22 @@
 
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
+
+      @include respond(tab-port) {
+        margin-right: 0;
+        margin-bottom: $gutter-vertical-small;
+      }
+    }
+
+    // at max-width: 900px breakpoint,
+    // all columns should have a width of 100%
+    // use !important to ensure these widths are overwritten
+
+    // then remove horizontal gutter as not needed anymore
+
+    // then create a new variable called $gutter-vertical-small
+    @include respond(tab-port) {
+      width: 100% !important;
     }
   }
 

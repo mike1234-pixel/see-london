@@ -33,6 +33,8 @@ $breakpoint argument choices:
 - tab-land
 - big-desktop
 
+ORDER: base + typography > general layout + grid > page layout > components
+
 1em == 16px
 Using ems in media queries rather than pixels allows the user to define their own font-size, which we want them to be able to do
 */

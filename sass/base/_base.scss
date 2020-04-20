@@ -9,6 +9,13 @@
 }
 
 html {
+  // order of media queries is important.
+  // in this case the bigger ones need to go first,
+  // because if two media queries are true the last declaration will apply
+  // is screen less than 900? yes, is screen less than 600? yes - last query applies
+  // is screen less than 600? yes, is screen less than 900? yes - last query applies
+  // if we were doing mobile-first / min-width on the other hand, the order would need to be from smallest to biggest
+
   // This defines what 1rem is
   font-size: 62.5%; // 1rem = 10px; 10px/16px = 62.5%
 
