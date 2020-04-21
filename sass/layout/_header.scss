@@ -5,12 +5,31 @@
       rgba($color-primary-light, 0.8),
       rgba($color-primary-dark, 0.8)
     ),
-    url("../img/hero.jpg");
+    url("../img/hero-small.jpg");
   background-size: cover;
   background-position: top;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
+
+  // RESPONSIVE IMAGES IN CSS (background-images)
+  /* 
+  » all we need to do is to write media queries to load different images for different situations
+  » one type of media query targets resolution (rather than screen width)
+  » 192 dots per inch is the resolution of the apple retina screen
+  » Phones also have high res screens so we can add a second condition that the sreen size must be over 600px (37.5em) for the large image to be applied
+  » If the screen is low-res but large (width 2000px+ / 125em+), then it also makes sense to apply the large image
+  » the comma in a media query functions as an or. 
+  */
+
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.8),
+        rgba($color-primary-dark, 0.8)
+      ),
+      url("../img/hero.jpg");
+  }
 
   @include respond(phone) {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);

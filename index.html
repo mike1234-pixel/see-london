@@ -92,8 +92,9 @@
           <div class="col-1-of-2">
             <div class="composition">
               <!--RESOLUTION SWITCHING (decreasing image resolution on smaller screens)-->
-              <!-- we use a width descriptor to inform the browser of the width of the images we're providing -->
+              <!-- we use a width descriptor to inform the browser of the width (in pixels) of the images we're providing -->
               <!-- the sizes attribute tells the browser what vw the image should be at various breakpoints, with a default width at the end -->
+              <!-- source size values specify the intended display size of the image -->
               <!-- use the src attribute as a fallback in case the user is using an older browser that does not support srcset -->
               <img
                 srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
