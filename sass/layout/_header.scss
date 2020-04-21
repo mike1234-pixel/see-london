@@ -25,9 +25,9 @@
   » the comma in a media query functions as an or. 
   */
 
-  @media (min-resolution: 192dpi) and (min-width: 37.5em),
-    (min-width: 125em),
-    (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    only screen and (min-width: 125em),
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
     (min-width: 125em) /* adding support for safari here */ {
     background-image: linear-gradient(
         to right bottom,

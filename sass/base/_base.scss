@@ -34,3 +34,9 @@ html {
   }
   // here we are passing the content 'font-size: 50%' into the mixin
 }
+
+// we can change the background color and color of highlighted text using the ::selectio pseudo-class
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
+}
