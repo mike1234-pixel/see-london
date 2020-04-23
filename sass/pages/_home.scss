@@ -75,7 +75,7 @@
         rgba($color-white, 0.9) 70%,
         transparent 70%
       ),
-      url(../img/nat-10.jpg);
+      url("../img/london/london-hero-3.jpeg");
   }
 
   @include respond(tab-port) {
@@ -84,7 +84,7 @@
         rgba($color-white, 0.9) 0%,
         rgba($color-white, 0.9) 100%
       ),
-      url(../img/nat-10.jpg);
+      url("../img/london/london-hero-3.jpeg");
   }
 
   &__form {
