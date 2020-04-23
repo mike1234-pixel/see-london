@@ -1384,7 +1384,7 @@ body {
 
 .section-features {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.8), rgba(86, 67, 250, 0.8)), url("../img/london/london-hero-3.jpeg");
+  background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.8), rgba(86, 67, 250, 0.8)), url("../img/London/london-hero-3.jpeg");
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -10rem; }
@@ -1420,7 +1420,7 @@ body {
   box-shadow: 0 1.5 4rem rgba(0, 0, 0, 0.15); }
   @media only screen and (max-width: 75em) {
     .book {
-      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 70%, transparent 70%), url("../img/london/london-hero-3.jpeg"); } }
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 70%, transparent 70%), url("../img/London/london-hero-3.jpeg"); } }
   @media only screen and (max-width: 56.25em) {
     .book {
       background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url("../img/london/london-hero-3.jpeg"); } }
