@@ -10,28 +10,12 @@
   visibility: hidden;
   transition: all 0.3s;
 
-  // GRACEFUL DEGRADATION
-  // This involves providing a modern experience for modern browsers, and a simpler experience for older browsers
-  // As an example, the background-filter only works in safari
-  // we can use @supports to ask the browser if it supports a certain property
-  // and if it does support the property, to apply certain styles:
   @supports (-webkit-background-filter: blur(10px)) or
     (background-filter: blur(10px)) {
     background-color: rgba($color-black, 0.3);
     -webkit-background-filter: blur(10px);
     background-filter: blur(10px);
   }
-  // caniuse.com - can query whether properties are supported on particular browsers here
-
-  // PREFIXES
-  // the following prefixes allow you to use the newest or experimental CSS features which are not yet formally supported in the specification / web browsers:
-  //- Safari: -webkit-
-  //- Chrome: -webkit-
-  //- Internet Explorer: -ms-
-  //- Opera: -o-
-  //- Firefox: -moz-
-  //- Android: -webkit-
-  //- iOS: -webkit-
 
   // open states
   &:target {
@@ -107,9 +91,23 @@
     hyphens: auto;
   }
 }
+////////////////////////////////////////////////////
+/////////////////////PHONE//////////////////
+///////////////////////////////////////////////////
+@include respond(phone) {
+  .popup {
+    &__left {
+      width: 0;
+    }
 
-// column layout
-// column-count property allows us to set out our text in columns
-// use opacity: 0 and visibility: hidden in order to be able to animate the popup in and out of existence (as opposed to diaply: none which we can't animate)
-// give popup id of "popup" (anchor) and set the target on the book now buttons to href="#popup"
-// we can then use the :target pseudo-class on the element when the element becomes a target, and specify that the element should be visible
+    &__right {
+      width: 100%;
+    }
+    &__text {
+      font-size: 1rem;
+      @media (max-width: 350px) {
+        font-size: 0.6rem;
+      }
+    }
+  }
+}

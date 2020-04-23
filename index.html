@@ -10,11 +10,11 @@
       rel="stylesheet"
     />
 
-    <!--<link rel="stylesheet" href="css/icon-font.css" />-->
+    <!-- <link rel="stylesheet" href="css/icon-font.css" /> -->
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="img/london/favicon.png" />
 
-    <title>Natours | Exciting tours for adventurous people</title>
+    <title>See London | Official Visitor Guide</title>
   </head>
   <body>
     <!-- we want a classname on each element in the HTML-->
@@ -28,24 +28,28 @@
         <ul class="navigation__list">
           <li class="navigation__item">
             <a href="#" class="navigation__link"
-              ><span>#01</span> About Natours</a
+              ><span>#01</span> Tickets & Offers</a
             >
           </li>
           <li class="navigation__item">
             <a href="#" class="navigation__link"
-              ><span>#02</span> Your Benefits</a
+              ><span>#02</span> Things To Do</a
             >
           </li>
           <li class="navigation__item">
             <a href="#" class="navigation__link"
-              ><span>#03</span> Popular Tours</a
+              ><span>#03</span> Historical Sights</a
             >
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link"><span>#04</span> Stories</a>
+            <a href="#" class="navigation__link"
+              ><span>#04</span> Accommodation</a
+            >
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link"><span>#05</span> Book Now</a>
+            <a href="#" class="navigation__link"
+              ><span>#05</span> Traveller Information</a
+            >
           </li>
         </ul>
       </nav>
@@ -53,70 +57,63 @@
 
     <header class="header">
       <div class="header__logo-box">
-        <img src="./img/logo-white.png" alt="Logo" class="header__logo" />
+        <img
+          src="./img/london/header-logo.png"
+          alt="Logo"
+          class="header__logo"
+        />
       </div>
       <div class="header__text-box">
         <h1 class="heading-primary">
-          <span class="heading-primary--main">Outdoors</span>
-          <span class="heading-primary--sub">Is Where Life Happens</span>
+          <span class="heading-primary--main">See London</span>
+          <span class="heading-primary--sub">Official Visitor Guide</span>
         </h1>
-        <a href="#" class="btn btn--white">Discover our tours</a>
+        <a href="#" class="btn btn--white">Discover London</a>
       </div>
     </header>
     <main>
       <section class="section-about">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">
-            Exciting tours for adventurous people
+            Welcome to London
           </h2>
         </div>
         <div class="row">
           <div class="col-1-of-2">
             <h3 class="heading-tertiary u-margin-bottom-small">
-              You're going to fall in love with nature
+              Greetings!
             </h3>
             <p class="paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-              quibusdam, nemo consectetur reprehenderit magnam, id aspernatur
-              quisquam necessitatibus quasi.
+              And welcome to See London. On this site you will find everything
+              you need to know about visiting London, including sights,
+              attractions, tickets and travel information.
             </p>
             <h3 class="heading-tertiary u-margin-bottom-small">
-              Live adventurous like you never have before
+              You're going to fall in love with London
             </h3>
             <p class="paragraph">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Aspernatur, nostrum corrupti iure ullam minima accusamus,
-              suscipit!
+              London was founded by the Romans 2000 years ago and today is a
+              thriving world city, with iconic sights including Buckingham
+              Palace, Harrods and Madam Tussauds.
             </p>
             <a href="#" class="btn-text">Learn More &rarr;</a>
           </div>
           <div class="col-1-of-2">
             <div class="composition">
-              <!--RESOLUTION SWITCHING (decreasing image resolution on smaller screens)-->
-              <!-- we use a width descriptor to inform the browser of the width (in pixels) of the images we're providing -->
-              <!-- the sizes attribute tells the browser what vw the image should be at various breakpoints, with a default width at the end -->
-              <!-- source size values specify the intended display size of the image -->
-              <!-- use the src attribute as a fallback in case the user is using an older browser that does not support srcset -->
               <img
-                srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
-                sizes="(max-width: 900) 20vw, (max-width: 600px), 30vw, 300px"
                 class="composition__photo composition__photo--p1"
-                alt="Landscape of cliffs, trees and a stream with a blue sky"
-                src="img/nat-1-large.jpg"
+                alt="London Underground"
+                src="img/london/tube-2.jpeg"
               />
               <img
-                srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
-                sizes="(max-width: 900) 20vw, (max-width: 600px), 30vw, 300px"
                 class="composition__photo composition__photo--p2"
-                alt="Person cycling alone on a road in the countryside"
-                src="img/nat-2-large.jpg"
+                alt="St Paul's Cathedral"
+                src="img/london/st-pauls-1.jpeg"
               />
               <img
-                srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
-                sizes="(max-width: 900) 20vw, (max-width: 600px), 30vw, 300px"
                 class="composition__photo composition__photo--p3"
-                alt="Person hiking on top of a large hill at sunset"
-                src="img/nat-3-large.jpg"
+                alt="Tower Bridge"
+                src="img/london/tower-bridge-3.jpeg"
               />
             </div>
           </div>
@@ -128,48 +125,54 @@
             <div class="feature-box">
               <i class="feature-box__icon icon-basic-world"></i>
               <h3 class="heading-tertiary u-margin-bottom-small">
-                Explore the world
+                Explore London
               </h3>
               <p class="feature-box__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-                consectetur nisi placeat minima illum officia.
+                London is a world class city that attracts 30 million visitors
+                per year. Central London is one of the most exciting places in
+                the world...
               </p>
+              <a href="#" class="btn-text">Learn More &rarr;</a>
             </div>
           </div>
           <div class="col-1-of-4">
             <div class="feature-box">
-              <i class="feature-box__icon icon-basic-compass"></i>
+              <i class="feature-box__icon icon-basic-todolist-pen"></i>
               <h3 class="heading-tertiary u-margin-bottom-small">
-                Meet nature
+                Plan Your Journey
               </h3>
               <p class="feature-box__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-                consectetur nisi placeat minima illum officia.
+                Boasting five major airports, including Heathrow, London is
+                comfortably one of the most connected cities in Europe...
               </p>
+              <a href="#" class="btn-text">Learn More &rarr;</a>
             </div>
           </div>
           <div class="col-1-of-4">
             <div class="feature-box">
               <i class="feature-box__icon icon-basic-map"></i>
               <h3 class="heading-tertiary u-margin-bottom-small">
-                Find your way
+                Find Your Way
               </h3>
               <p class="feature-box__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-                consectetur nisi placeat minima illum officia.
+                London's modern transport network, including the London
+                Underground, make getting around London a breeze...
               </p>
+              <a href="#" class="btn-text">Learn More &rarr;</a>
             </div>
           </div>
           <div class="col-1-of-4">
             <div class="feature-box">
               <i class="feature-box__icon icon-basic-heart"></i>
               <h3 class="heading-tertiary u-margin-bottom-small">
-                Live a healthier life
+                Fall In Love
               </h3>
               <p class="feature-box__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-                consectetur nisi placeat minima illum officia.
+                Visit a city that will make you feel alive and excited, where
+                the world comes to mix and every moment is a thrilling
+                adventure!
               </p>
+              <a href="#" class="btn-text">Learn More &rarr;</a>
             </div>
           </div>
         </div>
@@ -177,7 +180,7 @@
       <section class="section-tours" id="section-tours">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">
-            Most popular tours
+            Most popular attractions
           </h2>
         </div>
         <div class="row">
@@ -188,16 +191,16 @@
                 <div class="card__picture card__picture--1">&nbsp;</div>
                 <h4 class="card__heading">
                   <span class="card__heading-span--1">
-                    The Sea Explorer
+                    Attraction Tickets
                   </span>
                 </h4>
                 <div class="card__details">
                   <ul>
-                    <li>3 day tour</li>
-                    <li>Up to 30 people</li>
-                    <li>2 tour guides</li>
-                    <li>Sleep in cozy hotels</li>
-                    <li>Difficulty: easy</li>
+                    <li>London Eye</li>
+                    <li>SEA LIFE</li>
+                    <li>Ripley's Believe It Or Not</li>
+                    <li>Madam Tussaud's</li>
+                    <li>The London Dungeon, and more...</li>
                   </ul>
                 </div>
               </div>
@@ -205,10 +208,11 @@
                 <!--back content-->
                 <div class="card__cta">
                   <div class="card__price-box">
-                    <p class="card__price-only">Only</p>
-                    <p class="card__price-value">£297</p>
+                    <p class="card__price-only">From</p>
+                    <p class="card__price-value">£17</p>
+                    <p class="card__price-adjunct">per person</p>
                     <a href="#popup" class="btn btn--white u-margin-top-big"
-                      >Book Now</a
+                      >Book Tickets</a
                     >
                   </div>
                 </div>
@@ -223,16 +227,16 @@
                 <div class="card__picture card__picture--2">&nbsp;</div>
                 <h4 class="card__heading">
                   <span class="card__heading-span--2">
-                    The Forest Hiker
+                    Sightseeing Pass
                   </span>
                 </h4>
                 <div class="card__details">
                   <ul>
-                    <li>7 day tour</li>
-                    <li>Up to 40 people</li>
-                    <li>6 tour guides</li>
-                    <li>Sleep in provided tents</li>
-                    <li>Difficulty: medium</li>
+                    <li>Westminster Abbey</li>
+                    <li>Tower of London</li>
+                    <li>Houses of Parliament</li>
+                    <li>St Paul's Cathedral</li>
+                    <li>Buckingham Palace, and more...</li>
                   </ul>
                 </div>
               </div>
@@ -241,9 +245,9 @@
                 <div class="card__cta">
                   <div class="card__price-box">
                     <p class="card__price-only">Only</p>
-                    <p class="card__price-value">£497</p>
+                    <p class="card__price-value">£113</p>
                     <a href="#popup" class="btn btn--white u-margin-top-big"
-                      >Book Now</a
+                      >Buy Now</a
                     >
                   </div>
                 </div>
@@ -258,16 +262,16 @@
                 <div class="card__picture card__picture--3">&nbsp;</div>
                 <h4 class="card__heading">
                   <span class="card__heading-span--3">
-                    The Snow Adventurer
+                    Theatre Tickets
                   </span>
                 </h4>
                 <div class="card__details">
                   <ul>
-                    <li>5 day tour</li>
-                    <li>Up to 15 people</li>
-                    <li>3 tour guides</li>
-                    <li>Sleep in provided tents</li>
-                    <li>Difficulty: hard</li>
+                    <li>Les Misérables</li>
+                    <li>The Lion King</li>
+                    <li>Matilda</li>
+                    <li>The Phantom of the Opera</li>
+                    <li>Billy Elliot, and more...</li>
                   </ul>
                 </div>
               </div>
@@ -275,10 +279,11 @@
                 <!--back content-->
                 <div class="card__cta">
                   <div class="card__price-box">
-                    <p class="card__price-only">Only</p>
-                    <p class="card__price-value">£897</p>
+                    <p class="card__price-only">From</p>
+                    <p class="card__price-value">£44</p>
+                    <p class="card__price-adjunct">per person</p>
                     <a href="#popup" class="btn btn--white u-margin-top-big"
-                      >Book Now</a
+                      >Book Tickets</a
                     >
                   </div>
                 </div>
@@ -290,7 +295,7 @@
 
         <!--DISCOVER MORE BTN-->
         <div class="u-center-text u-margin-top-big">
-          <a href="#" class="btn btn--primary">Discover All Tours</a>
+          <a href="#" class="btn btn--primary">Find Offers & Deals</a>
         </div>
       </section>
 
@@ -298,15 +303,15 @@
       <section class="section-stories">
         <div class="bg-video">
           <video class="bg-video__content" autoplay muted loop>
-            <source src="img/video.mp4" type="video/mp4" />
-            <source src="img/video.webm" type="video/webm" />
+            <source src="img/london/london-picadilly.mp4" type="video/mp4" />
+
             Your browser is not supported
           </video>
         </div>
         <!--H2-->
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">
-            We make people happy
+            A world class experience
           </h2>
         </div>
         <!--BOX 1-->
@@ -314,21 +319,23 @@
           <div class="story">
             <figure class="story__shape">
               <img
-                src="img/nat-8.jpg"
-                alt="Person on a tour"
+                src="img/london/tourist-1.jpeg"
+                alt="Woman having fun"
                 class="story__img"
               />
-              <figcaption class="story__caption">Mary Smith</figcaption>
+              <figcaption class="story__caption">Diana Young</figcaption>
             </figure>
             <div class="story__text">
               <h3 class="heading-tertiary u-margin-bottom-small">
                 I had the best week ever with my family
               </h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                aut cupiditate pariatur optio ullam at doloremque, iste facilis
-                voluptatem? Omnis fugiat quidem ducimus natus ratione non
-                explicabo saepe culpa voluptatem.
+                I come from a small town in the United States and came to London
+                with my family. London is a fun, exciting and exhausting city!
+                There is so much to do that you can explore and enjoy the
+                London's attractions for a full week and only scratch the
+                service of what London has to offer. I need to pay another visit
+                soon!
               </p>
             </div>
           </div>
@@ -339,21 +346,22 @@
           <div class="story">
             <figure class="story__shape">
               <img
-                src="img/nat-9.jpg"
-                alt="Person on a tour"
+                src="img/london/tourist-2.jpeg"
+                alt="Man drinking coffee"
                 class="story__img"
               />
-              <figcaption class="story__caption">Jack Wilson</figcaption>
+              <figcaption class="story__caption">Francisco García</figcaption>
             </figure>
             <div class="story__text">
               <h3 class="heading-tertiary u-margin-bottom-small">
-                Wow! My life is completely different now.
+                Wow! London was exhilerating and I need to come back.
               </h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                aut cupiditate pariatur optio ullam at doloremque, iste facilis
-                voluptatem? Omnis fugiat quidem ducimus natus ratione non
-                explicabo saepe culpa voluptatem.
+                I am from Portugal and came to London with friends. There is so
+                much great history and major sights in London. We saw Tower
+                Bridge, the Tower of London, Big Ben, Buckingham Palace, and we
+                rode on the London Eye! There is so much more left in London
+                that I want to do.
               </p>
             </div>
           </div>
@@ -372,7 +380,7 @@
               <form action="#" class="form">
                 <div class="u-margin-bottom-medium">
                   <h2 class="heading-secondary">
-                    Start booking now
+                    Sign up for exclusive offers
                   </h2>
                 </div>
                 <div class="form__group">
@@ -404,7 +412,7 @@
                     />
                     <label for="small" class="form__radio-label">
                       <span class="form__radio-button"></span>
-                      Small tour group</label
+                      Individual</label
                     >
                   </div>
                   <div class="form__radio-group">
@@ -416,7 +424,7 @@
                     />
                     <label for="large" class="form__radio-label">
                       <span class="form__radio-button"></span>
-                      Large tour group</label
+                      Group</label
                     >
                   </div>
                 </div>
@@ -436,36 +444,21 @@
         <!-- takes a srcset and a media query as attributes -->
 
         <picture class="footer__logo">
-          <source
-            srcset="
-              img/logo-green-small-1x.png 1x,
-              img/logo-green-small-2x.png 2x
-            "
-            media="(max-width: 37.5em)"
-          />
-          <img
-            srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x"
-            alt="Full logo"
-            src="img/logo-green-2x.png"
-          />
+          <img alt="Full logo" src="img/london/footer-logo.png" />
         </picture>
-        <!-- DENSITY SWITCHING (offer different image sizes for high and low res screens)-->
-        <!-- srcset attribute allows us to specify different images for high and low res screens -->
-        <!-- we write the image names, followed by a density descriptor -->
-        <!-- the 2x image should be twice the size of the 1x -->
       </div>
       <div class="row">
         <div class="col-1-of-2">
           <div class="footer__navigation">
             <ul class="footer__list">
               <li class="footer__item">
-                <a href="#" class="footer__link">Company</a>
+                <a href="#" class="footer__link">About Us</a>
               </li>
               <li class="footer__item">
                 <a href="#" class="footer__link">Contact Us</a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Careers</a>
+                <a href="#" class="footer__link">Accessibility</a>
               </li>
               <li class="footer__item">
                 <a href="#" class="footer__link">Privacy</a>
@@ -485,9 +478,7 @@
               class="footer__link"
               >Michael Tandy</a
             >
-            using SCSS. Based on a design by Jonas Schmedtman from his online
-            course
-            <a hef="#" class="footer__link">Advanced CSS and Sass</a>.
+            using SCSS 2020.
           </p>
         </div>
       </div>
@@ -496,8 +487,16 @@
     <div class="popup" id="popup">
       <div class="popup__content">
         <div class="popup__left">
-          <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img" />
-          <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img" />
+          <img
+            src="img/london/union-jack-1.jpeg"
+            alt="Tour photo"
+            class="popup__img"
+          />
+          <img
+            src="img/london/camden-1.jpeg"
+            alt="Tour photo"
+            class="popup__img"
+          />
         </div>
         <div class="popup__right">
           <a href="#section-tours" class="popup__close">&times;</a>
@@ -508,19 +507,23 @@
             Important &ndash; Please read these terms before booking
           </h3>
           <p class="popup__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Blandit
-            libero volutpat sed cras ornare arcu dui vivamus. Dictum sit amet
-            justo donec enim. Dictumst quisque sagittis purus sit amet volutpat
-            consequat. Nec ultrices dui sapien eget mi proin sed. Netus et
-            malesuada fames ac turpis egestas. Venenatis tellus in metus
-            vulputate eu scelerisque felis imperdiet. Ullamcorper dignissim cras
-            tincidunt lobortis feugiat. Ullamcorper morbi tincidunt ornare massa
-            eget egestas purus viverra. Purus sit amet luctus venenatis lectus
-            magna fringilla urna porttitor. Ornare massa eget egestas purus
-            viverra accumsan in nisl nisi. A cras semper auctor neque vitae
-            tempus quam pellentesque. Ultrices mi tempus imperdiet nulla
-            malesuada pellentesque elit eget gravida.
+            Use of the web site www.seelondon.com ("the Site") is on the below
+            terms and conditions. End use of the Site immediately if you do not
+            agree. These terms are a legal agreement between you and
+            SeeLondon.com. We reserve the right to change the terms. Goods or
+            services available for purchase on the Site, such as tours, hotel
+            bookings and shopping are provided by our partners and comprise a
+            contract between the user and our partner, not SeeLondon.com.
+            Although SeeLondon.com uses its reasonable endeavours to ensure
+            reputable suppliers are used on the Site it accepts no legal
+            liability arising from supplies by such partners. All sales are on
+            the partner's terms and conditions and the user which may be
+            accessed from the Site. The user is responsible for reviewing and
+            accepting the terms and conditions of the partner before booking.
+            The contract is made between the user and the partner, therefore any
+            questions or complaints should be addressed directly to the partner.
+            Cancellations and amendments must be addressed to the partner
+            directly.
           </p>
           <a href="#" class="btn btn--primary">Book Now</a>
         </div>
