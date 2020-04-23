@@ -160,7 +160,7 @@ body {
 
 .header {
   height: 85vh;
-  background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.8), rgba(86, 67, 250, 0.8)), url("../img/london/london-hero-2.jpeg");
+  background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.8), rgba(86, 67, 250, 0.8)), url("../img/London/london-hero-2.jpeg");
   background-size: cover;
   background-position: top;
   position: relative;
@@ -179,7 +179,7 @@ body {
       height: 95vh; } }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (min-width: 125em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-width: 125em) {
     .header {
-      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.8), rgba(86, 67, 250, 0.8)), url("../img/hero.jpg"); } }
+      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.8), rgba(86, 67, 250, 0.8)), url("../img/London/london-hero-2.jpeg"); } }
   @media only screen and (max-width: 37.5em) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
@@ -596,11 +596,11 @@ body {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../img/london/london-eye-1.jpeg); }
+      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url("../img/London/london-eye-1.jpeg"); }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/london/big-ben-1.jpeg); }
+      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url("../img/London/big-ben-1.jpeg"); }
     .card__picture--3 {
-      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/london/london-theatre-1.jpeg); }
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("../img/London/london-theatre-1.jpeg"); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
