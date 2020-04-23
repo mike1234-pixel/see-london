@@ -71,7 +71,7 @@
           $color-tertiary-light,
           $color-tertiary-dark
         ),
-        url(../img/london/london-eye-1.jpeg);
+        url("../img/London/london-eye-1.jpeg");
     }
     &--2 {
       background-image: linear-gradient(
@@ -79,7 +79,7 @@
           $color-primary-light,
           $color-primary-dark
         ),
-        url(../img/london/big-ben-1.jpeg);
+        url("../img/London/big-ben-1.jpeg");
     }
     &--3 {
       background-image: linear-gradient(
@@ -87,7 +87,7 @@
           $color-secondary-light,
           $color-secondary-dark
         ),
-        url(../img/london/london-theatre-1.jpeg);
+        url("../img/London/london-theatre-1.jpeg");
     }
   }
   &__heading {
