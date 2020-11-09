@@ -4,4 +4,4 @@
 
 Frontend web design project with scss.
 
-(See London!)[https://mike1234-pixel.github.io/see-london/]
+[See London!](https://mike1234-pixel.github.io/see-london/)
